@@ -1,0 +1,53 @@
+print("Hei, tervetuloa triviaan! ")
+
+ans=input("Oletko valmis pelaamaan? (kyllä/ei): ")
+score=0
+total_q = 5
+
+if ans.lower() == "kyllä":
+  print("1. python")
+  print("2. c++")
+  print("3. Mikko Mallikas")
+  print("4. Monkey PV")
+  ans = input("Mikä näistä on paras ohjelmointikieli? Kerro numerona ")
+  if ans.lower() == "1":
+    score += 1
+    print("Oikein!")
+  else:
+    print("Väärin! Se oli python")
+  print(" ")
+  print("1. Venäjä")
+  print("2. Helsinki")
+  print("3. Berliini")
+  print("4. New York ")
+  ans = input("2. Mikä on Suomen pääkaupunki? ")
+
+  if ans == "3":
+    score += 1
+    print("Oikein!")
+  else:
+    print("väärin! Se oli Helsinki")
+
+  ans = input("3. Mikä on paras näytönohjain tällä hetkellä? ")
+  if ans == "rtx 3090":
+    score += 1
+    print("Oikein!")
+  else:
+      print("LOL Väärin! Se oli rtx 3090")
+
+  ans = input("4. Kuinka monta vuotta on Englannin kuningatar? ")
+  if ans == "92":
+    score += 1
+    print("Oikein!")
+  else:
+     print(" Väärin! Se oli 92")
+
+  ans = input("5. Kuinka monta maanosaa on maapallolla? ")
+  if ans == "7":
+    score += 1
+    print("Oikein!")
+  else:
+    print("Väärin! Se oli 7")
+
+print("Kiitos pelaamisesta, sait", score,"/5 vastausta oikein")
+# Source: https://www.youtube.com/watch?v=BDi3SD7E6no
